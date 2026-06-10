@@ -64,12 +64,12 @@
 
         <a href="https://docs.google.com/forms/d/14jRcnYBmHs8XjDDqOup7Lw7cMP8ZzTSbwFa62za9IzI/closedform?utm_source=ig&utm_medium=social&utm_content=link_in_bio">Gabung Sekarang</a>
 
-        <a href="#tentang">Pelajari test Lanjut</a>
+        <a href="#tentang">Pelajari lebih Lanjut</a>
 
     </section>
 
 
-    <section id="tentang">
+    <section id="tentang" class="hidden">
 
         <h2>Tentang Kami</h2>
 
@@ -99,7 +99,7 @@
     </section>
 
 
-    <section id="ekskul">
+    <section id="ekskul" class="hidden">
 
         <h2>Ekstrakurikuler yang Dinaungi</h2>
 
@@ -155,7 +155,7 @@
     </section>
 
 
-    <section id="kegiatan">
+    <section id="kegiatan" class="hidden">
 
         <h2>Kegiatan</h2>
 
@@ -214,7 +214,7 @@
     </section>
 
 
-    <section id="galeri">
+    <section id="galeri" class="hidden">
 
         <h2>Dokumentasi Kegiatan</h2>
 
@@ -233,7 +233,7 @@
     </section>
 
 
-    <section id="visi-misi">
+    <section id="visi-misi" class="hidden">
 
         <h2>Visi & Misi</h2>
 
@@ -262,7 +262,7 @@
     </section>
 
 
-    <section id="faq">
+    <section id="faq" class="hidden">
 
         <h2>Pertanyaan Umum/Fast Answer & Question</h2>
 
@@ -288,7 +288,7 @@
     </section>
 
 
-    <section id="kontak">
+    <section id="kontak" class="hidden">
 
         <h2>Kontak</h2>
 
@@ -318,18 +318,35 @@
 
 <script>
 
-window.addEventListener("scroll", function(){
+const hiddenElements =
+document.querySelectorAll(".hidden");
 
-    const header = document.querySelector("header");
+function showElements(){
 
-    if(window.scrollY > 100){
-        header.classList.add("kecil");
-    }
-    else{
-        header.classList.remove("kecil");
-    }
+    hiddenElements.forEach((el)=>{
 
-});
+        const top =
+        el.getBoundingClientRect().top;
+
+        const trigger =
+        window.innerHeight - 100;
+
+        if(top < trigger){
+
+            el.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener(
+"scroll",
+showElements
+);
+
+showElements();
 
 </script>
 
