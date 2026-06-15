@@ -529,18 +529,18 @@ footer p{
 
     justify-content: center;
 
-    gap: 25px;
+    gap: 30px;
 }
 
 .divisi-card{
 
-    width: 280px;
+    width: 320px;
 
     background: white;
 
-    padding: 25px;
-
     border-radius: 15px;
+
+    overflow: hidden;
 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
@@ -552,14 +552,18 @@ footer p{
     transform: translateY(-8px);
 }
 
-.divisi-card h3{
+.divisi-card img{
 
-    color: #4a2ea6;
+    width: 100%;
 
-    margin-bottom: 15px;
+    height: 220px;
+
+    object-fit: cover;
 }
 
-.divisi-card p{
+.divisi-card h3{
 
-    color: #555;
+    padding: 15px;
+
+    color: #4a2ea6;
 }
