@@ -29,7 +29,7 @@ header{
 }
 
 header.kecil{
-    padding: 8px 8%;
+    padding: 4px 4%;
 
     backdrop-filter: blur(10px);
 
@@ -37,11 +37,15 @@ header.kecil{
 }
 
 nav{
+
+    position: relative;
+
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
+
     align-items: center;
 }
-
 nav div{
     display: flex;
     align-items: center;
@@ -106,7 +110,6 @@ nav a:hover{
 
 }
 
-}
 #hero a{
     display: inline-block;
     margin: 15px 10px;
@@ -320,6 +323,8 @@ footer p{
     font-size:28px;
 
     cursor:pointer;
+
+    align-items:flex-start;
 }
 
 
