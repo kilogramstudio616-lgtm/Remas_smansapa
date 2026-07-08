@@ -295,3 +295,25 @@
     }
 
 }
+
+
+footer{
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 2px solid #ddd;
+}
+
+footer img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+footer h3{
+    color: #4a2ea6;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
