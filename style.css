@@ -313,24 +313,23 @@ footer p{
 
 
 .logo-area{
-    display:flex;
-    align-items:center;
-    gap:15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 #menu-btn{
+    position: absolute;
+    left: 0;
 
-    background:none;
+    background: none;
+    border: none;
 
-    border:none;
+    color: white;
 
-    color:white;
+    font-size: 22px;
 
-    font-size:20px;
-
-    cursor:pointer;
-
-    align-items:flex-start;
+    cursor: pointer;
 }
 
 
