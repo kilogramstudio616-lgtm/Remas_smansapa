@@ -691,3 +691,49 @@ footer p{
     }
 
 }
+
+/* ===========================
+   Info Ekstrakurikuler
+=========================== */
+
+.ekskul-info{
+
+    width:100%;
+
+    margin-bottom:25px;
+
+    color:#666;
+
+    font-size:14px;
+
+    font-style:italic;
+
+    text-align:center;
+}
+
+
+/* ===========================
+   Link Detail Card
+=========================== */
+
+.lihat-detail{
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    color:#4a2ea6;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.ekskul-card:hover .lihat-detail{
+
+    color:#ffd700;
+
+    transform:translateX(6px);
+}
